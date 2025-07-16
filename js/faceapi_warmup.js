@@ -252,6 +252,7 @@ function addCapturePreview(dataUrl) {
 	const count = preview.querySelectorAll('textarea[id^="capturePreview_"]').length + 1;
 	const ta = document.createElement('textarea');
 	ta.id = `capturePreview_${count}`;
+	ta.name = `capturePreview_${count}`; 
 	ta.className = 'capture-data';
 	ta.style.display = 'none';
 	ta.value = dataUrl;
